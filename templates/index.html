@@ -1,5 +1,5 @@
 <!-- ClickPick - Order and Recieve -->
-
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClickPick - Order and Takeaway</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <meta name="description" content="ClickPick was made by freshmen at MAIT, Delhi to... ">
     <meta name="robots" content="INDEX, FOLLOW">
     <meta name="keywords" content="clickpick, CLICKPICK, ClickPick, click, pick">
@@ -38,13 +38,13 @@
 
         <div>
             <a href="/index.html">
-                <img id="logo" src="/img/logo.png" alt="ClickPick">
+                {% load static %}<img id="logo" src="{% static "/media/logo.png" %}" alt="ClickPick">
             </a>
         </div>
 
         <div id="navbar" class="centred">
             <br><br>
-            <a class="navBtn" href="/index">HOME</a>
+            <a class="navBtn" href="index">HOME</a>
             <a class="navBtn" href="#">SEVICES</a>
             <a class="navBtn" href="#">REGISTER</a>
             <a class="navDwnldBtn" href="#">DOWNLOAD</a>            
