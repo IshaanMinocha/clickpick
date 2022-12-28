@@ -1,0 +1,125 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+:root {
+    --bg-color: #6b50ff;
+    --primary-color: #ffe600;
+    --secondary-color: #ff9500;
+    --block-color: #1a1252;
+    --text-color: #181818;
+}
+
+*::selection {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: var(--bg-color);
+    height: 100px;
+}
+
+#logo {
+    height: 100px;
+    margin-left: 0px;
+    position: fixed;
+}
+
+#navbar {
+    margin-left: 125px;
+}
+
+.navBtn {
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 7px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;    
+}
+
+.navBtn:hover {
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navDwnldBtn {
+    background-color: var(--secondary-color);
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 3px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+    border-radius: 30px;
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+
+}
+
+.navDwnldBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.centred {
+    text-align: center;
+}
+
+.righted {
+    text-align: right;
+}
+
+.lefted {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+#block1 {
+    background-color: var(--block-color);
+}
+
+.heading {
+    font-family: 'Seymour One', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.subheading {
+    font-family: 'Prosto One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
